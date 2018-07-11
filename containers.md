@@ -21,3 +21,16 @@ Note:
 - the Time Sharing Operating System for the RCA Spectra 70/46
 
 
+---
+
+# Containers
+
+* Virtualizes the file system
+* Virtualizes network resources
+
+
+---
+
+# Docker
+
+* Wraps container technology in an easy to use package.
