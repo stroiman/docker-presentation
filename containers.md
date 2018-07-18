@@ -34,3 +34,9 @@ Note:
 # Docker
 
 * Wraps container technology in an easy to use package.
+* Originally for Linux (Mac and Windows runs a virtualized Linux)
+* Now also supports native Windows containers
+
+Note:
+
+
