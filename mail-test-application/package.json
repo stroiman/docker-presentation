@@ -1,5 +1,9 @@
 {
   "name": "mail-test",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
 }
