@@ -2,8 +2,14 @@ const nodemailer = require('nodemailer');
 
 const { SMTP_HOST, SMTP_PORT } = process.env;
 
-if (!SMTP_HOST) { throw new Error("Missing SMTP_HOST env variable") };
-if (!SMTP_PORT) { throw new Error("Missing SMTP_PORT env variable") };
+if (!SMTP_HOST) {
+  console.error("Missing SMTP_HOST env variable");
+  process.exit(1);
+};
+if (!SMTP_PORT) {
+  console.error("Missing SMTP_PORT env variable")
+  process.exit(1);
+};
 
 
 let transporter = nodemailer.createTransport({
