@@ -5,21 +5,29 @@
 <div class="container">
 <div class="row">
 <div class="col">
-## Images &#x1F304;
+<h2>Images &#x1F304;</h2>
 
-* A compiled, distributable package
+<ul>
+<li>A compiled, distributable package</li>
+</ul>
 
 </div>
 <div class="col">
-### Containers &#x1F4E6;
+<h2>Containers &#x1F4E6;</h2>
 
-* A running instance, started from an image
-* When started, has a state identical to the image
-* Any changes to state are local to the container
+<ul>
+<li>A running instance, started from an image</li>
+</ul>
 
 </div>
 </div>
 </div>
+
+<small>
+<ul>
+<li> When started, a container has a state identical to the image</li>
+<li> Any changes to state are local to the container</li>
+</small>
 
 Note:
 
