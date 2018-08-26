@@ -6,6 +6,7 @@ docker image</small>
 * Follow the rules of the 12-factor app
 * Inject configuration as environment variable
 * Be aware of security issues in base images
+* Avoid running as root
 
 Note:
 

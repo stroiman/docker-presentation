@@ -20,5 +20,13 @@ services:
 
 Note:
 
+docker-compose commands are similar to docker
+
+---
+
+# Show processes handles by compose
+
+Note:
+
 yaml fil-format.
 Indeholder ikke noget, der ikke kunne laves med direkte `docker` kald.

@@ -4,16 +4,16 @@
 
 <div class="container">
 <div class="row">
-<div class="col">
-<h2>Images &#x1F304;</h2>
+<div class="col fragment">
+<h2>Image &#x1F304;</h2>
 
 <ul>
 <li>A compiled, distributable package</li>
 </ul>
 
 </div>
-<div class="col">
-<h2>Containers &#x1F4E6;</h2>
+<div class="col fragment">
+<h2>Container &#x1F4E6;</h2>
 
 <ul>
 <li>A running instance, started from an image</li>
@@ -25,8 +25,8 @@
 
 <small>
 <ul>
-<li> When started, a container has a state identical to the image</li>
-<li> Any changes to state are local to the container</li>
+<li class="fragment"> When started, a container has a state identical to the image</li>
+<li class="fragment"> Any changes to state are local to the container</li>
 </small>
 
 Note:
