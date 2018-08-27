@@ -4,6 +4,10 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }

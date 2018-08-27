@@ -4,9 +4,12 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "run-p client server",
+    "client": "node run-client.js",
+    "server": "node run-server.js"
   },
   "dependencies": {
+    "nodemon": "^1.18.3",
     "npm-run-all": "^4.1.3"
   }
 }
