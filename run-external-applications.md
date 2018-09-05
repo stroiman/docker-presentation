@@ -47,11 +47,16 @@ https://hub.docker.com/r/jenkins/jenkins/
 
 # Some useful images
 
-- PostgreSQL <!-- .element: class="fragment" data-fragment-index="1" -->
-- MySQL <!-- .element: class="fragment" data-fragment-index="1" -->
-- MongoDB <!-- .element: class="fragment" data-fragment-index="1" -->
-- AWS DynamoDB <!-- .element: class="fragment" data-fragment-index="1" -->
-- SQL Server (for linux) <!-- .element: class="fragment" data-fragment-index="2" -->
-- Kafka <!-- .element: class="fragment" data-fragment-index="3" -->
-- RabbitMQ <!-- .element: class="fragment" data-fragment-index="3" -->
-- Mailhog (testing mail sending) <!-- .element: class="fragment" data-fragment-index="4" -->
+<ul>
+<li class="fragment">Databases<br /><small>PostgreSQL, MySQL, Mariadb, MS Sql
+Server (for Linux)</small></li>
+<li class="fragment">Message queues
+<br /><small>RabbitMQ, Kafka</small>
+</li>
+<li class="fragment">Cloud Services<br />
+<small>Localstack (AWS Services), <a href="https://hub.docker.com/r/microsoft/azure-storage-emulator/">Azure Storage
+Emulator</a>
+</small>
+<li class="fragment">Mail
+</li>
+</ul>

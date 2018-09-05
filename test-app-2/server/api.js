@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const registerUser = require("./register-user");
 
+
 const router = express.Router();
 
 router.use(bodyParser.json());

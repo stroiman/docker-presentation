@@ -1,6 +1,6 @@
 # docker-compose
 
-<small>Makes it simpler to configure docker containers</small>
+<small>Easily setup a network of docker containers</small>
 
 ```yaml
 # docker-compose.yaml
@@ -22,11 +22,33 @@ Note:
 
 docker-compose commands are similar to docker
 
----
-
-# Show processes handles by compose
-
-Note:
-
 yaml fil-format.
 Indeholder ikke noget, der ikke kunne laves med direkte `docker` kald.
+
+---
+
+# Start app with services
+
+<div style="font-size: 0.75em">
+<pre><code>version: "3"
+
+services:
+  app:
+    image: node
+    working_dir: /app
+    volumes:
+      - ".:/app"
+    depends_on:
+      - mailserver
+    ports:
+      - "9000:9000"
+    environment:
+      - "SMTP_HOST=mailserver"
+      - "SMTP_PORT=1025"
+    command: npm run start
+
+  mailserver:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"</code></pre>
+</div>
