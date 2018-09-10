@@ -35,13 +35,21 @@ docker run -p 1025:1025 -p 8025:8025 mailhog/mailhog
 
 ---
 
-# Start a Jenkins server
+# Execute a command in a running container
+
+---
+
+Take a backup of a database:
 
 ```
-$ docker run -p 8080:8080 jenkins/jenkins
+$ docker exec <container_id> mysqldump -pfoobar our_application_database > dump.sql
 ```
 
-https://hub.docker.com/r/jenkins/jenkins/
+Restore a database:
+
+```
+$ docker exec -i mysql <container_id> -pfoobar our_application_database < dump.sql
+```
 
 ---
 

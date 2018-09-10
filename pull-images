@@ -4,3 +4,4 @@ docker pull ubuntu
 docker pull jenkins/jenkins
 docker pull mariadb
 docker pull mailhog/mailhog
+docker pull golang

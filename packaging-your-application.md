@@ -63,6 +63,19 @@ CMD ["npm", "run", "start"]
 
 ---
 
+# Create a name and _tag_
+
+```
+docker tag 6d53bbe34422 test-application
+```
+
+- Tags are overwritable
+- Same image can have multiple tags
+    - e.g. `app:latest`, `app:3`, `app:3.4`, `app:3.4.2`, `app:stable`
+- Default tag is `latest`
+
+---
+
 # Entrypoint vs Command
 
 - ENTRYPOINT is launched when running a command in an image

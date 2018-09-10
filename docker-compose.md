@@ -27,9 +27,9 @@ Indeholder ikke noget, der ikke kunne laves med direkte `docker` kald.
 
 ---
 
-# Start app with services
+## Start app with services
 
-<div style="font-size: 0.75em">
+<div style="font-size: 0.7em">
 <pre><code>version: "3"
 
 services:
@@ -43,12 +43,14 @@ services:
     ports:
       - "9000:9000"
     environment:
-      - "SMTP_HOST=mailserver"
+      - "SMTP_HOST=mailserver" # host name -> service name
       - "SMTP_PORT=1025"
     command: npm run start
 
   mailserver:
     image: mailhog/mailhog
     ports:
-      - "8025:8025"</code></pre>
+      - "8025:8025"
+      # Look ma, port 1025 is not exposed
+      </code></pre>
 </div>

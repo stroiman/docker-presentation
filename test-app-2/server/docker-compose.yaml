@@ -1,7 +1,12 @@
 version: "3"
 
 services:
-  app:
+   mailserver:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+
+   app:
     image: node
     working_dir: /app
     volumes:
@@ -9,14 +14,8 @@ services:
     depends_on:
       - mailserver
     ports:
-      - "9000:9000"
+      - "9001:9000"
     environment:
       - "SMTP_HOST=mailserver"
       - "SMTP_PORT=1025"
     command: npm run start
-
-  mailserver:
-    image: mailhog/mailhog
-    ports:
-      - "8025:8025"
-

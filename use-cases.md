@@ -1,5 +1,5 @@
 # Use cases
 
-- Kør nemt alle afhængige services lokalt under udvikling/test <!-- .element: class="fragment" -->
-- Pak din applikation sammen med alle afhængigheder <!-- .element: class="fragment" -->
-- Gør din byggeserver uafhængig af teknologi <!-- .element: class="fragment" -->
+- Easily start dependencies of your application when running/testing locally <!-- .element: class="fragment" -->
+- Package you application with all run-time dependencies <!-- .element: class="fragment" -->
+- Make your build server independent of technologh <!-- .element: class="fragment" -->
